@@ -25,7 +25,7 @@ func main() {
 	}
 	log.Printf("portforward listen on %s", localAddr)
 
-	rand.Seed(time.Nanoseconds())
+	rand.Seed(time.Now().UnixNano())
 	for {
 		conn, err := local.Accept()
 		if conn == nil {
