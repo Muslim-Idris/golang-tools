@@ -5,7 +5,7 @@ import (
 	"os"
 	"net"
 	"log"
-	"rand"
+	"math/rand"
 	"time"
 )
 
